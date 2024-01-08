@@ -9,7 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.github.bartimaeusnek.croploadcore.oredict.*;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterBoP;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterNatura;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterThaumcraft;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterThaumicBases;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterTinkersConstruct;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterVanilla;
+import com.github.bartimaeusnek.croploadcore.oredict.RegisterWitchery;
 
 import cpw.mods.fml.common.Loader;
 import ic2.api.crops.CropCard;

@@ -1,9 +1,9 @@
 package com.github.bartimaeusnek.croploadcore.oredict;
 
-import mods.natura.common.NContent;
-
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
+
+import mods.natura.common.NContent;
 
 public class RegisterNatura implements OreDictRegistrator {
 
