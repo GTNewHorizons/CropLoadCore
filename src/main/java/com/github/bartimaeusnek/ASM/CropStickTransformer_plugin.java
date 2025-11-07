@@ -3,25 +3,22 @@ package com.github.bartimaeusnek.ASM;
 import java.util.Map;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin.MCVersion;
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin.Name;
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin.TransformerExclusions;
 
-@MCVersion("1.7.10")
-@TransformerExclusions({ "com.github.bartimaeusnek.ASM" })
-@Name(CropStickTransformer_plugin.NAME)
+@IFMLLoadingPlugin.MCVersion("1.7.10")
+@IFMLLoadingPlugin.TransformerExclusions({ "com.github.bartimaeusnek.ASM" })
+@IFMLLoadingPlugin.Name(CropStickTransformer_plugin.NAME)
 public class CropStickTransformer_plugin implements IFMLLoadingPlugin {
 
     public static final String NAME = "CroploadCore ASM Core";
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[] { CropStickTransformer.class.getName() };
+        return null;
     }
 
     @Override
     public String getModContainerClass() {
-        return CropLoadCoreASM.class.getName();
+        return "com.github.bartimaeusnek.ASM.CropLoadCoreASM";
     }
 
     @Override
